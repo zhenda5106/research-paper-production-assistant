@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-17",
+  "distribution": "Original orchestration plus separately fetched upstream snapshots; retained files unmodified; explicit asset exclusions apply.",
+  "sources": [
+    {
+      "id": "nature",
+      "repository": "Yuan1z0825/nature-skills",
+      "commit": "14ca69710cae192325395a380e9cdd4ae5d9d0c8",
+      "license": "Apache-2.0",
+      "skills": [
+        "skills/nature-reader",
+        "skills/nature-polishing",
+        "skills/nature-figure",
+        "skills/nature-paper2ppt"
+      ],
+      "archive_sha256": "6e797ce4c97a6d81d466742724e68147e782bfe4b958392cf3185cc676bef868",
+      "excluded_prefixes": [
+        "skills/nature-figure/assets/figures4papers/"
+      ]
+    },
+    {
+      "id": "ideas",
+      "repository": "KalarisLabs/research-agent-skills",
+      "commit": "a74b0dbe5fa865d73b9f250ba5b0c9f107bd1baa",
+      "license": "MIT",
+      "skills": [
+        "skills/brainstorming-research-ideas"
+      ],
+      "archive_sha256": "ced520c59d1e641bdf27979aa56bde6d4bf8116b7db1ac9f2c5c40915a96fde3"
+    },
+    {
+      "id": "scientific",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "commit": "ec59a29a03d5c40f73ab40878df04860bc00e876",
+      "license": "MIT",
+      "skills": [
+        "skills/statistical-analysis",
+        "skills/scientific-visualization"
+      ],
+      "archive_sha256": "04d2477269da1c0051ffab9af32c17aba9388868a04d7d3f989d36104b3f203c"
+    },
+    {
+      "id": "academic",
+      "repository": "Imbad0202/academic-research-skills",
+      "commit": "f7da54e81b06da3e659c93f5309a1c0f98bd202a",
+      "license": "CC-BY-NC-4.0",
+      "skills": [
+        "academic-paper",
+        "academic-paper-reviewer"
+      ],
+      "archive_sha256": "98fb64aac2e6468be7d15e102257e4265c73726af3e971b8fbe26c9031f32c0d"
+    }
+  ]
+}

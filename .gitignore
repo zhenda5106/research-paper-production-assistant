@@ -1,0 +1,6 @@
+.research/
+.upstream/
+__pycache__/
+*.pyc
+outputs/
+.venv/

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Paper Production Assistant"
+  short_description: "Coordinate research, writing, figures and peer review"
+  default_prompt: "Use $research-paper-production-assistant to work on my current research stage using the project's pinned skills."
