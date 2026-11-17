@@ -1,26 +1,25 @@
-# 来源审查记录
+# Source audit
 
-核查日期：2026-11-17。以固定提交的实际文件为依据，而非聚合站的许可证标签。
+Checked on 2026-11-17 against pinned repository files.
 
-## 已核查
+## Findings
 
-- 九个指定名称均找到匹配候选；Academic Paper 的其他同名项目存在，本项目选择与 Academic Paper Reviewer 同仓库的 Imbad0202 版本。
-- 四个仓库的 root LICENSE / LICENSE.md 已读取。GitHub 对其中两个返回 NOASSERTION，实际文本分别为 MIT 和 CC BY-NC 4.0，未据 API 标签直接下结论。
-- 选题模块经 Kalaris 的 THIRD_PARTY_NOTICES 和 upstream-manifest 追溯至 orchestra-research；保留两层署名。
-- Nature 的四个模块读取 manifest 并依赖 nature-shared，不能只复制 SKILL.md。
-- Academic 的两个模块依赖 shared/、scripts/ 等根目录资源，保留仓库结构。它们包含多代理设计；实际宿主是否支持需要运行时判断。
-- Nature Figure 的 figures4papers 参考脚本/预览图授权未明确，已列入提取排除清单。主仓库的许可不覆盖这个例外。
+- The nine selected skills come from four repositories. Academic Paper and Academic Paper Reviewer use the same upstream project so their shared resources remain compatible.
+- Root license files were inspected directly. GitHub reported NOASSERTION for two repositories; their actual license texts identify MIT and CC BY-NC 4.0 respectively.
+- Kalaris lists the ideation skill as adapted from orchestra-research. Both attribution layers are retained.
+- Nature skills use manifests and sibling nature-shared resources. Academic skills use root-level shared/ and scripts/ resources. Full repository layout is retained locally.
+- Nature Figure includes figures4papers scripts and previews with unresolved permissions. That directory is excluded during extraction; the root license does not establish permission for those assets.
 
-## 整合决策
+## Distribution
 
-采用原创总控 + 固定版本独立依赖。默认 Git 发布仅包含原创文件、来源链接、锁文件和下载工具，所有上游实现保存在忽略目录。免费科研分享采用含 CC BY-NC 的组合，不宣传整套工具可无条件商用。
+The Git release contains original orchestration, tooling, documentation and source references. Upstream implementations are downloaded into an ignored local directory. Retained upstream files are unchanged. The configured academic workflow includes CC BY-NC dependencies and is intended for noncommercial research use.
 
-读取/分析上游技能仅用于整合，没有调用它们执行科研工作，也没有执行上游安装脚本、API 调用或包管理器。下载整个快照用于保持依赖布局，不表示启用其中所有技能。未对完整仓库中每一个脚本、模板、图像和测试材料做版权或安全审计。
+Repository downloads do not enable every included skill. No upstream installation scripts or paid model calls are part of setup. This review is not a comprehensive copyright or security audit of every file in the upstream repositories.
 
-## 尚未完成的实际任务验收
+## Validation boundaries
 
-需要真实输入才能验证：原始数据复算、论文与参考文献核验、图件渲染质量、回复信逐项核对、PPT 渲染及讲稿适配。第一版只声明来源和结构验证，不声称九模块科研效果已经端到端验证。
+Launcher tests and structural validation do not prove scientific quality. Recomputed results, reference verification, rendered figures, revised responses and presentation quality require task-specific materials and checks. Direct CLI dispatch is tested with a mocked process; real model-driven workflows have not been evaluated end to end.
 
-## 更新规则
+## Dependency updates
 
-更新依赖需重新检查许可证、NOTICE、素材例外、目录布局和共享引用，再更新提交与 ZIP 校验值。不要仅把分支名改为 main 以跟随最新版。重新分发上游正文或做完整离线打包前，应逐项审查打包材料，保留所有适用声明，不能直接上传 .upstream/。
+When changing a provider, recheck its licenses, notices, asset exceptions, shared paths and entrypoints before updating the pinned commit and archive hash. An offline redistribution of upstream files needs a separate review of the actual packaged material and its notices.

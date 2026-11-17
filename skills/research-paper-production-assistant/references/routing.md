@@ -4,15 +4,15 @@ All paths below are relative to the toolkit repository root. Read only the provi
 
 | Stage | Provider entrypoint | Dispatch rule |
 |---|---|---|
-| 选题 | `.upstream/ideas/skills/brainstorming-research-ideas/SKILL.md` | Explore and rank research questions; distinguish proposed novelty from verified novelty. |
-| 文献阅读 | `.upstream/nature/skills/nature-reader/SKILL.md` | Read supplied papers, translate requested excerpts, or build a bilingual reader. A full reader is not required for a narrow question. |
-| 统计检查 | `.upstream/scientific/skills/statistical-analysis/SKILL.md` | Separate raw-data analysis, design/power advice, and manuscript reporting checks. |
-| 论文写作 | `.upstream/academic/academic-paper/SKILL.md` | Choose the matching mode, e.g. outline, abstract, drafting or revision. Preserve author evidence and target discipline. |
-| 润色 | `.upstream/nature/skills/nature-polishing/SKILL.md` | Improve language within the requested scope; preserve findings and qualifications. |
-| 科研绘图 | `.upstream/nature/skills/nature-figure/SKILL.md` | Lead figure narrative, panel arrangement, editable schematics and journal-oriented styling. |
-| 数据可视化 | `.upstream/scientific/skills/scientific-visualization/SKILL.md` | Lead Python data encodings, uncertainty, accessibility and export checking. Combine with Nature Figure for complex data figures without duplicate rendering. |
-| 审稿／复审 | `.upstream/academic/academic-paper-reviewer/SKILL.md` | Produce critique or verify revisions; findings remain separate from manuscript edits. |
-| 组会汇报 | `.upstream/nature/skills/nature-paper2ppt/SKILL.md` | Build a paper-based presentation with evidence figures and speaker notes. |
+| Ideation | `.upstream/ideas/skills/brainstorming-research-ideas/SKILL.md` | Explore and rank research questions; distinguish proposed novelty from verified novelty. |
+| Paper reading | `.upstream/nature/skills/nature-reader/SKILL.md` | Read supplied papers, translate requested excerpts, or build a bilingual reader. A full reader is not required for a narrow question. |
+| Statistics | `.upstream/scientific/skills/statistical-analysis/SKILL.md` | Separate raw-data analysis, design/power advice, and manuscript reporting checks. |
+| Writing | `.upstream/academic/academic-paper/SKILL.md` | Choose the matching mode, e.g. outline, abstract, drafting or revision. Preserve author evidence and target discipline. |
+| Polishing | `.upstream/nature/skills/nature-polishing/SKILL.md` | Improve language within the requested scope; preserve findings and qualifications. |
+| Scientific figures | `.upstream/nature/skills/nature-figure/SKILL.md` | Lead figure narrative, panel arrangement, editable schematics and journal-oriented styling. |
+| Data visualization | `.upstream/scientific/skills/scientific-visualization/SKILL.md` | Lead Python data encodings, uncertainty, accessibility and export checking. Combine with Nature Figure for complex data figures without duplicate rendering. |
+| Review / re-review | `.upstream/academic/academic-paper-reviewer/SKILL.md` | Produce critique or verify revisions; findings remain separate from manuscript edits. |
+| Presentations | `.upstream/nature/skills/nature-paper2ppt/SKILL.md` | Build a paper-based presentation with evidence figures and speaker notes. |
 
 ## Figures
 

@@ -22,9 +22,12 @@ def fetch(url: str) -> bytes:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--record-hashes', action='store_true', help='Maintainer: record archive hashes on first acquisition')
+    parser.add_argument('--source', action='append', choices=['nature', 'ideas', 'scientific', 'academic'], help='Fetch only this provider; repeat for multiple providers')
     args = parser.parse_args()
     lock = json.loads(LOCK.read_text(encoding='utf-8'))
     for source in lock['sources']:
+        if args.source and source['id'] not in args.source:
+            continue
         target = ROOT / '.upstream' / source['id']
         receipt = target / '.rppa-receipt.json'
         if target.exists():

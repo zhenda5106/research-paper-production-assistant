@@ -1,0 +1,98 @@
+{
+  "skills": [
+    {
+      "id": "ideas",
+      "name": "Research ideation",
+      "source": "ideas",
+      "path": "skills/brainstorming-research-ideas",
+      "hint": "Research field, initial ideas, available resources and timeline"
+    },
+    {
+      "id": "read",
+      "name": "Paper reading",
+      "source": "nature",
+      "path": "skills/nature-reader",
+      "hint": "Paper PDF, DOI, URL or a selected passage"
+    },
+    {
+      "id": "stats",
+      "name": "Statistical analysis",
+      "source": "scientific",
+      "path": "skills/statistical-analysis",
+      "hint": "Data and study design, or a statistical report to audit"
+    },
+    {
+      "id": "write",
+      "name": "Academic writing",
+      "source": "academic",
+      "path": "academic-paper",
+      "hint": "Research question, real results, sources and target section"
+    },
+    {
+      "id": "polish",
+      "name": "Language polishing",
+      "source": "nature",
+      "path": "skills/nature-polishing",
+      "hint": "Draft text, output language and target journal"
+    },
+    {
+      "id": "figure",
+      "name": "Scientific figures",
+      "source": "nature",
+      "path": "skills/nature-figure",
+      "hint": "Data or draft figure, purpose and Python/R preference"
+    },
+    {
+      "id": "visualize",
+      "name": "Data visualization",
+      "source": "scientific",
+      "path": "skills/scientific-visualization",
+      "hint": "Dataset, variable definitions and visualization requirements"
+    },
+    {
+      "id": "review",
+      "name": "Peer review",
+      "source": "academic",
+      "path": "academic-paper-reviewer",
+      "hint": "Manuscript and target venue; reviewer comments for re-review"
+    },
+    {
+      "id": "slides",
+      "name": "Paper presentations",
+      "source": "nature",
+      "path": "skills/nature-paper2ppt",
+      "hint": "Paper or reading notes, presentation duration and audience"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "paper-to-slides",
+      "name": "Paper to presentation",
+      "steps": [
+        "read",
+        "slides"
+      ],
+      "instruction": "Create source-linked reading notes, then a lab-meeting deck and speaker notes. Preserve evidence figures and limitations; adapt to the requested duration and language."
+    },
+    {
+      "id": "submission-check",
+      "name": "Pre-submission check",
+      "steps": [
+        "stats",
+        "review",
+        "polish"
+      ],
+      "instruction": "Audit statistical reporting, review arguments and evidence, then polish supported statements. Without raw data, do not claim recomputation. Do not invent remedies or change results. List unresolved issues without guaranteeing submission readiness."
+    },
+    {
+      "id": "revision",
+      "name": "Reviewer response and revision",
+      "steps": [
+        "review",
+        "write",
+        "review"
+      ],
+      "instruction": "Map reviewer comments to issues, revise the manuscript using available evidence, draft point-by-point responses, then verify each change. Distinguish completed work from proposed experiments; never invent results."
+    }
+  ]
+}

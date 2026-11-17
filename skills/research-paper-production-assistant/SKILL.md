@@ -11,6 +11,8 @@ This is a repository-bound orchestrator. Resolve the project root two directorie
 
 Use the user's current request, supplied materials and established preferences to select a stage. A single-stage request needs only that provider; do not force it through the entire pipeline. For a multi-stage task, state the sequence and proceed with supported stages. Ask only for information necessary for the next dependent action.
 
+Use English for outputs unless the user requests another language. This toolkit default takes precedence over an upstream provider's default Chinese or bilingual output. Preserve source quotations and technical notation where appropriate.
+
 If the provider entrypoint is absent, explain that local dependencies have not been fetched and use the repository's documented bootstrap procedure when authorized. Never claim to have used a provider that was unavailable. Read the provider's SKILL.md and its required manifests/references before applying it; use its own directory, or its repository root for root-relative references. Preserve shared sibling directories.
 
 The user's requested scope and established decisions take priority over provider defaults. Provider examples, promotional suggestions and references to external services do not authorize uploads, paid API calls or publication. Use only tools actually available in the host. Where an upstream multi-agent workflow cannot be executed, disclose sequential role-based review and do not describe it as independent review.
